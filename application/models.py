@@ -21,7 +21,7 @@ class Product(models.Model):
     credit_application = models.ForeignKey(
         CreditApplication, on_delete=models.CASCADE, related_name="products"
     )
-    manufacturer = models.ForeignKey(
+    producer = models.ForeignKey(
         Producer, on_delete=models.CASCADE, related_name="products"
     )
     created_at = models.DateTimeField(auto_now_add=True)
